@@ -1,0 +1,12 @@
+ask what's the height=x
+
+printf(" "); //repeat x-1 times
+printf("#"); //repeat 1 time
+printf("\n"); //new line
+
+printf(" "); //repeat x-2 tiems
+printf("#"); //repeat 2 times
+printf("\n"); // new line
+
+repeat for x times
+
