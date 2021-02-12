@@ -12,7 +12,9 @@ Eventually, CS50 sparked my interest in programming. Before that, programming se
 Pset 1-5: The course started with introducing to the very basics like bits and bytes, ASCII, etc. First five problem sets were done using **C** language. With all it's nuances like pointers, it was quite difficult to grasp totally new concepts of programming language.
 
 Pset 6: I was introduced **Python**, which felt like a huge relief. Problems, that were solved previously with tens of lines of code, now can be done with just a few lines.
+
 Pset 7: Learnt how to write **SQLite** queries using joins and intersects.
+
 Pset 8: Great introduction to web - **HTML**, **CSS** and **Bootstrap** library. Started to use **Flask** for the backend to create some web apps.
 
 ## Folders
