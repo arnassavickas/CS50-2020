@@ -1,0 +1,45 @@
+.box {
+    padding-top: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 600px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #518CC8;
+}
+
+body {
+    background-color: #2E3341;
+    color: #FBF9F8;
+}
+
+.date {
+    font-size: x-large;
+    white-space: nowrap;
+    border-collapse: collapse;
+    vertical-align: top;
+    padding-right: 15px;
+}
+
+.cvtext {
+    padding-top: 10px;
+}
+
+.carousel-item img {
+    border-radius: 10px;
+}
+
+.carousel-caption {
+    position: static;
+}
+
+h5 {
+    font-weight: 300;
+}
+
+.modal-content {
+    color: #2E3341;
+    margin-top: 100px;
+}

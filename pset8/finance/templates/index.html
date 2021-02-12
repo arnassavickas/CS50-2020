@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block alert %}
+    
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped text-left">
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>TOTAL</th>
+        </tr>
+        {% set i = 0 %}
+        {% for row in shares %}
+            {% if row['total'] > 0 %}
+                <tr>
+                    <td>{{ row['symbol'] }}</td>
+                    <td>{{ row['name'] }}</td>
+                    <td>{{ row['total'] }}</td>
+                    <td>{{ usd(lookup(row['symbol'])['price']) }}</td>
+                    {% set total = usd(lookup(row['symbol'])['price'] * row['total']) %}
+                    <td>{{ total }}</td>
+                    {# why cannot do it like this {% set i = i + lookup(row['symbol'])['price'] * row['total'] %} #}
+                </tr>
+            {% endif %}
+        {% endfor %}
+        <tr>
+            <td>CASH</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{{ usd(cash) }}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="font-weight: bold">{{ usd(cash + total) }}</td>
+        </tr>
+    </table>
+{% endblock %}
